@@ -11,6 +11,7 @@ public class Homework21Xu {
         System.out.println(Arrays.equals(car.getValidLicenseTypes(), str));
         System.out.println();
 
+        // Testing a Boat
         Boat boat = new Boat("propeller", 5) {};
         System.out.println(boat.getGasMileage() == 5);
         boat.noise(); //horn
@@ -19,6 +20,7 @@ public class Homework21Xu {
         System.out.println(Arrays.equals(boat.getValidLicenseTypes(), str2));
         System.out.println();
 
+        // Testing a Plane
         Plane plane = new Plane(50, 5) {};
         System.out.println(plane.getGasMileage() == 5);
         plane.noise(); //engine
