@@ -1,9 +1,9 @@
 abstract class Car implements Vehicle, Driveable {
     private double gasMileage;
-    private boolean isManual;
+    private String transmission;
 
-    public Car(boolean isManual, double gasMileage) {
-        this.isManual = isManual;
+    public Car(String transmission, double gasMileage) {
+        this.transmission = transmission;
         this.gasMileage = gasMileage;
     }
 
@@ -11,10 +11,24 @@ abstract class Car implements Vehicle, Driveable {
         return gasMileage;
     }
 
-    public boolean isManual() {
-        return isManual;
+    public String getTransmission() {
+        return transmission;
     }
 
+    public boolean isAutomatic() {
+        if (transmission.equals("automatic")){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    public boolean isManual() {
+        if (transmission.equals("manual")){
+            return true;
+        }else {
+            return false;
+        }
+    }
     @Override
     public void noise() {
        System.out.println("honk");
