@@ -1,5 +1,8 @@
-import java.util.Arrays;
+//Claire Xu
+//AP CS G
+//Homework 21
 
+import java.util.Arrays;
 public class Homework21Xu {
     public static void main(String[] args) {
         // Testing a Car
