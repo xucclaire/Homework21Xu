@@ -15,25 +15,13 @@ abstract class Boat implements Vehicle, Driveable {
     }
 
     public boolean isPropeller() { //if movement uses a propeller, return true
-        if (movementType.equals("propeller")){
-            return true;
-    }else {
-            return false;
-        }
+        return movementType.equals("propeller");
     }
     public boolean isEngine() { //if movement uses an engine, return true
-        if (movementType.equals("engine")){
-            return true;
-        }else {
-            return false;
-        }
+        return movementType.equals("engine");
     }
     public boolean isSails() { //if movement uses sails, return true
-        if (movementType.equals("sails")){
-            return true;
-        }else {
-            return false;
-        }
+        return movementType.equals("sails");
     }
 
     @Override

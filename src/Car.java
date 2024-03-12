@@ -16,18 +16,10 @@ abstract class Car implements Vehicle, Driveable {
     }
 
     public boolean isAutomatic() { //if car is automatic, return true
-        if (transmission.equals("automatic")){
-            return true;
-        }else {
-            return false;
-        }
+        return transmission.equals("automatic");
     }
     public boolean isManual() { //if car is manual, return true
-        if (transmission.equals("manual")){
-            return true;
-        }else {
-            return false;
-        }
+        return transmission.equals("manual");
     }
     @Override
     public void noise() {
